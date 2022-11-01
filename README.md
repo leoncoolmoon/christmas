@@ -13,8 +13,8 @@ https://youtube.com/shorts/ej0nH_mT4Pg?feature=share
 ## material list:
 
 1. 1x Wemos D1 mini (ESP8266)
-2. 1x 9g servo(180/360default you can change it in the code)
-3. 2x  line of LEDs in parallel
+2. 1x 9g servo(180/360<-default you can change it in the code)
+3. 2x LED strips (suggest to use the multipul colour "led strip for balloons")
 4. 1x speaker
 5. 1x s8050 or other npn
 6. 1x 100 uF capacitor
