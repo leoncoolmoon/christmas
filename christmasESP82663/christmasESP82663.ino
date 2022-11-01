@@ -12,6 +12,7 @@ extern bool led1 = true;
 extern bool led2 = true;
 extern bool train = true;
 extern bool music = true;
+extern bool musicDone = true;
 extern int vol = 3;
 
 #ifdef MUSIC_PLAY
@@ -98,11 +99,13 @@ void loop()
 #endif
 #endif
 #ifdef TRAIN_RUN
-  //  Serial.println ("loopTrain");
+    //Serial.print ("loopTrain ");
+   //Serial.println (train);
   loopTrain();
 #endif
 #ifdef LED_LIGHT
   //  Serial.println ("loopLed");
   loopLed();
 #endif
+ 
 }

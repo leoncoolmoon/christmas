@@ -14,19 +14,22 @@ static bool runtrain = false;
 
 void setupTrain(){
    myservo.attach(SERVO_PIN);
-     //Serial.begin(115200);
+    // Serial.begin(115200);
 
  }
 
 void loopTrain() {
-  if (train != runtrain){
+  if (train != runtrain || musicDone){
   if (train) {
-    //Serial.println(clockwise_pos);
+   // Serial.println(clockwise_pos);
     myservo.write(clockwise_pos);              // tell servo to go to position in variable 'pos'
   }else{
-    //Serial.println(stop_pos);
+   // Serial.println(stop_pos);
     myservo.write(stop_pos); 
     }
-    runtrain =train ;
+    
+    runtrain = train ;
+    musicDone = false;
   }
+     // Serial.println( myservo.read());
   }

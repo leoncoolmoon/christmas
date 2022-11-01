@@ -123,4 +123,5 @@ Serial.println(cmd);
 
 void loopWeb(void) {
   wserver.handleClient();
+  delay(1);
 }

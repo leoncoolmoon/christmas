@@ -68,6 +68,7 @@ void loopMusic() {
     } else {
       if (!mp3->loop()) {
         mp3->stop();
+        musicDone = true;
       } else {
         if (vol != volume) {
           //Serial.print("vol =");
@@ -80,6 +81,7 @@ void loopMusic() {
 
   } else {
     if (music) {
+      //musicDone = false;
       playMp3();
     }
   }
