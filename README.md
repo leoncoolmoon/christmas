@@ -2,8 +2,10 @@
 my DIY Christmas Village and Train music box</br>
 Support webpage control </br>
 Support OTA </br>
-In the data folder rst.mp3 if for reset the music it is the copy of pno-cs.mp3
-In the root folder the two mp3 files are the example tested for uploading both 32kbps.
+In the data folder rst.mp3 if for reset the music it is the copy of pno-cs.mp3</br>
+In the root folder the two mp3 files are the example tested for uploading both 32kbps.</br>
+PS: The gear on the thingiverse is ok to use</br>
+    but the gear on the tinkercad need to adjust x and y size to 95% </br>
 
 https://www.thingiverse.com/thing:5599288</br>
 https://youtube.com/shorts/ej0nH_mT4Pg?feature=share
