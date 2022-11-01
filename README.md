@@ -2,6 +2,8 @@
 my DIY Christmas Village and Train music box</br>
 Support webpage control </br>
 Support OTA </br>
+In the data folder rst.mp3 if for reset the music it is the copy of pno-cs.mp3
+In the root folder the two mp3 files are the example tested for uploading both 32kbps.
 
 https://www.thingiverse.com/thing:5599288</br>
 https://youtube.com/shorts/ej0nH_mT4Pg?feature=share
