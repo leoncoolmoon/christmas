@@ -14,7 +14,7 @@
 // pno_cs from https://ccrma.stanford.edu/~jos/pasp/Sound_Examples.html
 
 AudioGeneratorMP3 *mp3;
-AudioFileSourceLittleFS *file;
+AudioFileSourceLittleFS *mp3file;
 AudioOutputI2SNoDAC *out;
 AudioFileSourceID3 *id3;
 static int volume = 4;
@@ -43,8 +43,8 @@ void MDCallback(void *cbData, const char *type, bool isUnicode, const char *stri
 void playMp3() {
   //Serial.begin(115200);
   //Serial.printf("Sample MP3 playback begins...\n");
-  file = new AudioFileSourceLittleFS("/pno-cs.mp3");
-  id3 = new AudioFileSourceID3(file);
+  mp3file = new AudioFileSourceLittleFS("/pno-cs.mp3");
+  id3 = new AudioFileSourceID3(mp3file);
   id3->RegisterMetadataCB(MDCallback, (void*)"ID3TAG");
   out = new AudioOutputI2SNoDAC();
   mp3 = new AudioGeneratorMP3();
